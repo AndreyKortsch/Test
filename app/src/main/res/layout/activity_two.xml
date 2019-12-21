@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TwoActivity">
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/textView3"
+        android:layout_width="338dp"
+        android:layout_height="360dp"
+        android:justificationMode="none"
+        android:text="Далее следуют утверждения, касающиеся состояния вашего здоровья и вашего характера.  Прочитайте каждое утверждение и решите, верно оно или неверно по отношению к вам.  Не тратьте времени на раздумывание.  Наиболее естественно то решение, которое первым приходит в голову.   "
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/textView4"
+        android:layout_width="78dp"
+        android:layout_height="56dp"
+        android:text="Пол:"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="196dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Мужской"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Женский"
+            android:textSize="30sp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

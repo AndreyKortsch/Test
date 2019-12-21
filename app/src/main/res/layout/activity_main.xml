@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="171dp"
+        android:layout_height="87dp"
+        android:background="@drawable/x"
+        android:onClick="onClick"
+        android:text="Пройти тест"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839" />
+
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/textView2"
+        android:layout_width="343dp"
+        android:layout_height="476dp"
+        android:background="@drawable/x"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:justificationMode="none"
+        android:text="Опросник Мини-Мульт (Mini-Mult), или Сокращенный многофакторный опросник для исследования личности (СМОЛ), представляет собой сокращенный вариант опросника MMPI. Методику разработал Джеймс Кинканнон (James C. Kincannon) в 1968 году, русскоязычная адаптация сделана В. П. Зайцевым и В. Н. Козюлей в 1981 году. Опросник содержит 71 вопрос, восемь базисных клинических шкал (исключены шкалы маскулинности-феминности Mf и социальной интроверсии Si) и три оценочные шкалы. Методика ориентирована на выявление наиболее распространенных ситуативных или застойных личностных расстройств."
+        android:textAllCaps="false"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
